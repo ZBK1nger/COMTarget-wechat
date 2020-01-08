@@ -1,0 +1,33 @@
+<view class="container_box">
+  <image class="header" src="/assets/WechatIMG3.jpg" style="width:750rpx;height:352rpx;">
+  </image>
+  <view class="user_box">
+    <image src="/assets/211578470128_.pic.jpg"></image>
+    <view class="infos">
+      <view class="name">张筱雨
+        <view class="type">房主</view>
+      </view>
+      <view class="tel">13836888888</view>
+    </view>
+  </view>
+
+  <view class="vertical_box">
+    <view class="horizontal_item_box">
+      <image class="img" src="/assets/241578471207_.pic_thumb.jpg"></image>
+      <view class="name">已加入小区</view>
+      <image class="arrow" src="/assets/arrow_dark_right.png"></image>
+    </view>
+
+    <view class="horizontal_item_box">
+      <image class="img" src="/assets/231578471195_.pic_thumb.jpg"></image>
+      <view class="name">已加入房屋</view>
+      <image class="arrow" src="/assets/arrow_dark_right.png"></image>
+    </view>
+
+    <view class="horizontal_item_box">
+      <image class="img" src="/assets/221578471188_.pic_thumb.jpg"></image>
+      <view class="name">类型</view>
+      <image class="arrow" src="/assets/arrow_dark_right.png"></image>
+    </view>
+  </view>
+</view>

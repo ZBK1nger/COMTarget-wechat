@@ -1,0 +1,43 @@
+<view class="container_box">
+
+  <image src="/assets/banner1.jpg" style="width:750rpx;height:441rpx;" bindtap="pushManage"></image>
+
+  <view class="notice_bar_box">
+    <image src="/assets/laws.png" style="width:72rpx;height:82rpx;"></image>
+    <view class="conten_box">
+      <view class="line_box">
+        <view class="title">公告</view>
+        <view class="content">【南骏豪庭小区】小区停水通知!</view>
+      </view>
+      <view class="line_box" style="margin-top:20rpx;">
+        <view class="title">信息</view>
+        <view class="content">【南骏豪庭小区】2020新年快乐!</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="nav_box">
+    <view class="item_box" wx:for='{{navList}}' wx:key='nav' wx:for-item='item' wx:for-index='index' bindtap="tapNavItem" data-index="{{index}}">
+      <image class="item_img" src="{{item.img}}"></image>
+      <view class="item_title">{{item.title}}</view>
+    </view>
+  </view>
+  <view class="record_container">
+    <view class="records_title">开门记录
+      <text>更多</text>
+    </view>
+    <view class="record_box" wx:for="{{list}}" wx:for-key="item.id">
+    <image class="status" src="/assets/indexdoor1.png"></image>
+      <view class="user_box">
+        <image></image>
+        <view class="name">{{item.name}}</view>
+      </view>
+      <view class="event_box">
+        <view class="community">{{item.communityName}}
+          <view class="address">{{item.address}}</view>
+        </view>
+        <view class="time">{{item.time}}</view>
+      </view>
+    </view>
+  </view>
+</view>

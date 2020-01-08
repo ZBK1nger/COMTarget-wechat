@@ -1,0 +1,121 @@
+/* pages/mine/mine.wxss */
+
+page {
+  position: relative;
+  background-color: #d6dcea;
+  height: 100%;
+}
+
+.header {
+  top: 0rpx;
+  left: 0rpx;
+  right: 0rpx;
+  width: 100%;
+  position: absolute;
+  background-color: lightblue;
+}
+
+.user_box {
+  top: 193rpx;
+  left: 34rpx;
+  right: 34rpx;
+  display: flex;
+  background-color: #fff;
+  height: 207rpx;
+  align-items: center;
+  border-radius: 10rpx;
+  position: absolute;
+}
+
+.user_box image {
+  width: 115rpx;
+  height: 115rpx;
+  margin-left: 34rpx;
+  border-radius: 50%;
+}
+
+.user_box .infos {
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.user_box .name {
+  color: #333;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+}
+
+.user_box .name .type {
+  width: 95rpx;
+  height: 44rpx;
+  background-color: #ffb72b;
+  border-radius: 22rpx;
+  margin-left: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 24rpx;
+}
+
+.user_box .tel {
+  margin-top: 24rpx;
+  font-size: 28rpx;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0rpx;
+  color: #666;
+}
+
+/*垂直*/
+
+.vertical_box {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 429rpx;
+  left: 34rpx;
+  right: 34rpx;
+  background-color: #fff;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  border-radius: 10rpx;
+}
+
+.horizontal_item_box {
+  display: flex;
+  flex-direction: row;
+  margin-left: 48rpx;
+  margin-right: 48rpx;
+  margin-top: 45rpx;
+  align-items: center;
+}
+
+.horizontal_item_box .img {
+  width: 57rpx;
+  height: 55rpx;
+}
+
+.horizontal_item_box .name {
+  margin-left: 24rpx;
+  color: #222;
+  font-size: 28rpx;
+  flex: 1;
+}
+
+.horizontal_item_box .arrow {
+  width: 14rpx;
+  height: 26rpx;
+  margin-right: 0rpx;
+}
+
+.report_phone {
+  position: fixed;
+  bottom: 51rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #c7c7cc;
+  width: 100%;
+}

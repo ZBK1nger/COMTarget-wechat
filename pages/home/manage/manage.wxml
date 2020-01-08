@@ -1,0 +1,28 @@
+<view class="data-list">
+  <view class="bg-white" wx:for="{{ dataInfo }}" wx:key="item">
+    <view class="data-info {{item.flag ? 'native' : 'active'}}" data-idx="{{ index }}" bindtap="expandDetail">
+      <image class="build" src="/assets/building.png"></image>
+      <view class="community">{{item.community}}</view>
+      <view class="type">{{item.type}}</view>
+      <view class="status">{{item.status}}</view>
+      <image class="arrow" src="/assets/arrow_dark_down.png"></image>
+    </view>
+    <block wx:if="{{ item.flag }}">
+      <view class="infos">
+        <view wx:for="{{persons[index]}}" class="title">{{item.key}}
+          <text>{{item.value}}</text>
+        </view>
+      </view>
+    </block>
+    <!-- 展开 -->
+    <view class="data-expand p10 border-bottom" wx:if="{{ item.flag }}">
+      <view class="action_box">
+        <image src="/assets/add.png" bindtap="add" data-index="{{index}}"></image>
+        <image src="/assets/modify.png" bindtap="modify"></image>
+        <image src="/assets/del.png"></image>
+      </view>
+    </view>
+  </view>
+
+  <view class="add" bindtap="addHouse">添加房屋</view>
+</view>
